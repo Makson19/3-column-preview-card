@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github.com/Makson19/3-column-preview-card](https://github.com/Makson19/3-column-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [makson19.github.io/3-column-preview-card/](https://makson19.github.io/3-column-preview-card/)
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Makson19](https://www.frontendmentor.io/profile/Makson19)
-- Github - [Makson19](https://www.twitter.com/yourusername)
+- Github - [Makson19](https://github.com/Makson19)
 - Codepen - [@Makson19](https://codepen.io/Makson19)
