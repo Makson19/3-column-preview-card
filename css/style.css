@@ -1,6 +1,6 @@
 
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -17,75 +17,71 @@
     --font-text: 'Lexend Deca', sans-serif;
 }
 
-
 body {
     min-height: 100vh;
-    width: 100%;
-    font-size: 15px;
     background-color: var(--light-gray);
+    font-size: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* ====== CONTAINER ====== */
+/* ===== CONTAINER ===== */
 .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 870px;
+    margin: 4rem 2rem;
 }
 
 .card-container .card {
-    height: 500px;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    height: 28rem;
 }
 
-/* ===== Headings ==== */
+/* ===== Headings ===== */
 .card h1 {
-    color: var(--light-gray);
-    text-transform: uppercase;
     font-family: var(--font-title);
-    font-weight: 700;
     font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light-gray);
     margin: 2rem 0;
 }
 
 /* ===== Paragraphs ===== */
 .card p {
-    color: var(--transparent-white);
-    line-height: 1.7;
     font-family: var(--font-text);
     font-weight: 400;
-    max-width: 600px;
-    max-height: 128px;
-    margin: 2rem 0;
+    line-height: 1.7;
+    color: var(--light-gray);
+    max-width: 38rem;
+    max-height: 8.53rem;
+    margin-bottom: 22%;
 }
 
 /* ===== Buttons ===== */
-.card button {
+.card a {
     background-color: var(--light-gray);
     padding: 0.8rem 1.8rem;
     border: none;
     border-radius : 32px;
     font-family: var(--font-text);
     font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
-    margin: 3rem 0 auto 0;
 }
 
 /* ===== Container Sedans ===== */
 .sedans {
     background-color: var(--orange);
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.sedans button {
+.sedans a {
     color: var(--orange);
 }
 
-.sedans button:hover {
+.sedans a:hover {
     background-color: var(--orange);
     color: var(--light-gray);
     border: 2px solid var(--light-gray);
@@ -97,11 +93,11 @@ body {
     background-color: var(--dark-cyan);
 }
 
-.suvs button {
+.suvs a {
     color: var(--dark-cyan);
 }
 
-.suvs button:hover {
+.suvs a:hover {
     background-color: var(--dark-cyan);
     color: var(--light-gray);
     border: 2px solid var(--light-gray);
@@ -111,66 +107,22 @@ body {
 /* ===== Container Luxury ===== */
 .luxury {
     background-color: var(--very-dark-cyan);
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.luxury button {
+.luxury a {
     color: var(--very-dark-cyan);
 }
 
-.luxury button:hover {
+.luxury a:hover {
     background-color: var(--very-dark-cyan);
     color: var(--light-gray);
     border: 2px solid var(--light-gray);
     transition: all 200ms ease;
 }
 
-/* ===== MEDIA QUERIES ===== */
-@media (max-width: 912px){
-    .card-container {
-        flex-direction: column;
-        width: 700px;
-        margin: 4rem 2rem;
-        min-height: 300px;
-    }
-
-    .card-container .card {
-        height: 430px;
-    }
-
-    .card button {
-        margin-top: 1.5rem;
-    }
-
-    .sedans {
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
-    }
-
-    .luxury {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 10px;;
-    }
-}
-
-@media (max-width: 375px){
-    .card-container .card {
-        height: 420px;
-    }
-
-    .card p {
-        margin: 1.2rem 0;
-    }
-
-    .card button {
-        margin-top: 1.1rem;
-    }
-}
-
-
-
-/* 
+/* ===== FOOTER ===== */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -179,4 +131,33 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-*/
+
+
+/* ===== MEDIA QUERIES ===== */
+@media (min-width: 911px) {
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 54.5rem;
+        margin: 0;
+    }
+
+    .card-container .card {
+        min-height: 32rem;
+    }
+
+    .card p {
+        margin-bottom: 45%;
+    }
+
+    .sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
